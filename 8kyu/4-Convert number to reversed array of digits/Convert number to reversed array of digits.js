@@ -8,6 +8,12 @@ Given a random non-negative number, you have to return the digits of this number
 
 // Solution
 
+// Split - Map - Reverse
 function digitize(n) {
   return (n + "").split("").map(Number).reverse();
 }
+
+// Array From
+const digitize1 = (n) => {
+  return Array.from(String(n), Number).reverse();
+};
